@@ -1,0 +1,5 @@
+scenario	fps	screenMaxFPS	hitches	hitchMsPerSec	p50ms	p95ms	p99ms	maxms
+scrollonly	60	60	0	0	16.67	16.67	16.67	16.67
+legacy-scroll	17.8	60	178	702.8	51.87	67.02	68.43	68.59
+glow-scroll	60	60	0	0	16.67	16.67	16.67	16.67
+input-scroll	60	60	0	0	16.67	16.67	16.67	16.67

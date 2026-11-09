@@ -1,0 +1,31 @@
+name: MarqueeGlowExample
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+packages:
+  MarqueeGlow:
+    path: ../..
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+targets:
+  MarqueeGlowExample:
+    type: application
+    platform: iOS
+    sources: [MarqueeGlowExample]
+    dependencies:
+      - package: MarqueeGlow
+    info:
+      path: MarqueeGlowExample/Info.plist
+      properties:
+        UILaunchScreen: {}
+        # Lets custom animations run at 120 Hz on ProMotion iPhones (otherwise capped at 60 Hz).
+        CADisableMinimumFrameDurationOnPhone: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.MarqueeGlowExample
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
